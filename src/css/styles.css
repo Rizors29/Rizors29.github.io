@@ -81,7 +81,46 @@ img:hover {
   padding: 15px;
 }
 
-@keyframes side{
+.box {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  text-shadow: #000000 2px 1px;
+}
+
+.b1 {
+  animation: ani1 6s infinite;
+}
+
+.b2 {
+  animation: ani2 6s infinite;
+}
+
+@keyframes ani1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes ani2 {
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes side {
   from {left: -50px;}
   to {left: 0px;}
 }
