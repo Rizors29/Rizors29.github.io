@@ -32,9 +32,33 @@
           </li>
         </ul>
       </div>
+      <a class="hidd me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+        <i class="fa-solid fa-bars" style="color: #000000;"></i>
+      </a>
     </div>
   </nav>
 
+  <div class="offcanvas offcanvas-start text-bg-dark" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header border-bottom border-warning">
+      <h5 class="offcanvas-title px-2" id="staticBackdropLabel">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+          <ul class="navbar-nav">
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link fw-medium" aria-current="page" href="#home"><i class="fa-solid fa-house px-2"></i>Home</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link fw-medium" href="#about" id="about-link"><i class="fa-solid fa-user px-2"></i>About</a>
+            </li>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link fw-medium" href="#projects"><i class="fa-solid fa-diagram-project px-2"></i>Projects</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
   <!-- jumbotron -->
   <section class="bg-yellow">
     <div class="d-flex align-items-center" style="height: 81vh;">
@@ -56,45 +80,45 @@
     <p class="text-center mx-5">Hello, my name is Mohammad Riza Al Fahrie. I'm 20 years old right now. In art, I'm
       passionate about drawing since 2015 and designing since 2018. In tech, I'm interested in web and game development
       since 2022. I've been learning them all, so please keep support me, Thank You! &#128513;</p>
+
+    <!-- projects -->
     <div class="mt-5" id="projects">
-      <h1 class="text-center fs-2 fw-medium mb-3">Projects</h1>
-      <div id="carouselExampleDark" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner m-auto rounded shadow p-0" style="width: 60%;">
-          <div class="carousel-item active">
-            <a href="pages/fanarts.html">
-              <img src="src/img/FanartCover.jpeg" class="d-block w-100" alt="...">
-              <div class="hid carousel-caption bg-dark bg-opacity-75 rounded p-0" style="color: white;">
-                <h5 class="m-0">Fanarts</h5>
-                <p class="m-1">This one of my digital fanarts, click here to see more</p>
+      <h1 class="text-center fs-3 fw-bold mb-3">PROJECTS</h1>
+      <div class="row row-cols-1 row-cols-md-2 g-4 mx-auto" style="width: 70%;">
+        <div class="col">
+          <div class="card">
+            <h5 class="card-title mx-auto fw-bold fs-5">FANARTS</h5>
+            <div id="carouselExampleSlidesOnly" class="carousel slide px-2 carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <img src="./src/img/Fanart1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/Fanart2.jpeg" class="d-block w-100" alt="...">
+                </div>
               </div>
-              <div class="hidd carousel-caption" style="color: white;">
-                <h5 class="m-0 box b1">Fanarts</h5>
-                <p class="m-0 box b2">click to see more</p>
-              </div>
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="pages/games.html">
-              <img src="src/img/GameCover.jpeg" class="d-block w-100" alt="...">
-              <div class="hid carousel-caption bg-dark bg-opacity-75 rounded p-0" style="color: white;">
-                <h5 class="m-0">Games</h5>
-                <p class="m-1">This one of my game projects, click here to see more</p>
-              </div>
-              <div class="hidd carousel-caption" style="color: white;">
-                <h5 class="m-0 box b1" style="text-shadow: 50px;">Games</h5>
-                <p class="m-0 box b2">click to see more</p>
-              </div>
-            </a>
+            </div>
+            <br>
+            <a href="./pages/fanarts.html" class="btn btn-outline-dark fw-bolder mx-2 mb-2">SEE MORE</a>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="col">
+          <div class="card">
+            <h5 class="card-title mx-auto fw-bold fs-5">GAMES</h5>
+            <div id="carouselExampleSlidesOnly" class="carousel slide px-2 carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <img src="./src/img/Game1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/Game3.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <br>
+            <a href="./pages/games.html" class="btn btn-outline-dark fw-bolder mx-2 mb-2">SEE MORE</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
