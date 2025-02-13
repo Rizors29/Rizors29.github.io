@@ -15,16 +15,6 @@ const textLoad = () => {
 textLoad();
 setInterval(textLoad, 12000);
 
-document.getElementById('about-link').addEventListener('click', function (event) {
-  event.preventDefault();
-  const aboutSection = document.getElementById('about');
-  const offsetTop = aboutSection.getBoundingClientRect().top + window.pageYOffset - document.querySelector('.navbar').offsetHeight;
-  window.scrollTo({
-    top: offsetTop,
-    behavior: 'smooth'
-  });
-});
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry)
